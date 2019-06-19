@@ -51,5 +51,5 @@ git push --tags
 							migrate-branch3
 
 
-## If only use `git push -u --all origin` command line to push your branch, you will find, you can use old master cover to your new master. Must add an option in the command line `--force`
+## If only use `git push -u --all` command line to push your branch, you will find, sometimes you can not use old the branch cover to your new. Then must add an another option in the command line `--force`
 
