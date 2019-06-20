@@ -18,23 +18,27 @@ git fetch origin
 ```
 git checkout -b xxx origin/xxx
 ```
-5. add to your new remote
+5. remote the old remote origin
+```
+git remote rm origin
+```
+6. add to your new remote
 ```
 git remote add origin https://yourNewRepo.git
 ```
-6. view existing remotes
+7. view existing remotes
 ```
 git remote -v
 ```
-7. push branches up to the new host
+8. push branches up to the new host
 ```
 git push -u --all origin
 ```
-8. make sure cover your new master branch success
+9. make sure cover your new master branch success
 ```
 git push --force origin master
 ```
-9. push tags up to the new host
+10. push tags up to the new host
 ```
 git push --tags
 ```
@@ -51,5 +55,5 @@ git push --tags
 							migrate-branch3
 
 
-## If only use `git push -u --all` command line to push your branch, you will find, sometimes you can not use old the branch cover to your new. Then must add an another option in the command line `--force`
+## If only use `git push -u --all origin` command line to push your branch, you will find, you can use old master cover to your new master. Must add an option in the command line `--force`
 
