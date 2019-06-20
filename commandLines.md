@@ -18,7 +18,7 @@ git fetch origin
 ```
 git checkout -b xxx origin/xxx
 ```
-5. remote the old remote origin
+5. remove the old remote origin
 ```
 git remote rm origin
 ```
